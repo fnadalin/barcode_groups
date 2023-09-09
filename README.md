@@ -64,10 +64,6 @@ $ MIN_GROUP_COUNT=$(grep "Min group count" ${outdir}/STDOUT | sed "s/Min group c
 $ Rscript barcode-groups-plots.R ${outdir} ${outdir}/plots "my sample" ${MIN_GROUP_COUNT} > ${outdir}/R.STDOUT 2> ${outdir}/R.STDERR
 ```
 
-## Contributing
-
-Francesca Nadalin
-
 ## Citing
 
 If you find this software useful, please cite:
