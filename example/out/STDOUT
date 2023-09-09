@@ -1,0 +1,13 @@
+store reads
+num sequences: 10000
+block size: 9
+num fingerprints: 262144
+fill hash
+build graph
+create groups
+number of groups: 6004
+number of edges connecting two groups: 2229
+Min group count: 67
+
+Wall time: 0.555002 s
+RSS: 15908

@@ -1,0 +1,3 @@
+seq_file: example/in/in_with_counts.GBC.txt
+mismatches: 1
+out_dir: example/out

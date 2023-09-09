@@ -1,0 +1,7 @@
+
+Usage: Rscript barcode-groups-plots.R <indir> <outdir> <title> <min_group_count>
+
+<indir>     where the results of ./barcode-groups are saved)
+<outdir>    where plots are saved
+<title>     to be put on top of each plot
+
