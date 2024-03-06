@@ -22,13 +22,13 @@ Below we assume that the sequences and their abundance have already been compute
 Either clone the repository:
 
 ```
-$ git clone https://gitlab.ebi.ac.uk/francesca/barcode_groups.git
+$ git clone https://github.com/fnadalin/barcode_groups.git
 ```
 
 or download and decompress the tarball archive:
 
 ```
-$ wget https://gitlab.ebi.ac.uk/francesca/barcode_groups/-/archive/master/barcode_groups-master.tar.gz
+$ wget https://github.com/fnadalin/barcode_groups/-/archive/master/barcode_groups-master.tar.gz
 $ tar -xzf barcode_groups-master.tar.gz barcode_groups
 ```
 
