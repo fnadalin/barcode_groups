@@ -39,6 +39,9 @@ $ cd barcode_groups
 $ make
 ```
 
+The installation takes < 0.1 second on a desktop computer.
+The software has been tested on version v1.0.0.
+
 ## Instructions
 
 Folder ```example/``` contains a sample input and output.  
@@ -51,18 +54,21 @@ $ input="example/in/in_with_counts.GBC.txt"
 $ outdir="example/out"
 ```
 
-then run the example instance:
+To run the example instance:
 
 ```
 $ ./barcode-groups ${input} ${DIST} ${FRAC} ${outdir} > ${outdir}/STDOUT 2> ${outdir}/STDERR
 ```
 
-and generate plots from the output files:
+The above command runs in < 1 second on a desktop computer.
+To generate plots from the output files:
 
 ```
 $ MIN_GROUP_COUNT=$(grep "Min group count" ${outdir}/STDOUT | sed "s/Min group count: //g")
 $ Rscript barcode-groups-plots.R ${outdir} ${outdir}/plots "my sample" ${MIN_GROUP_COUNT} > ${outdir}/R.STDOUT 2> ${outdir}/R.STDERR
 ```
+
+The above command runs in < 1 second on a desktop computer.
 
 ## Citing
 
