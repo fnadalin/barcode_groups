@@ -8,7 +8,7 @@ This is useful for creating a custom feature library for single-cell RNA-seq dat
 Extract groups of sequences sharing the same barcode using a graph approach.  
 The assumption is that the reads sequenced from the same barcode B differ from each other by a Hamming distance <= *D*, and that, among those, the "true" sequence is the one occurring most often in the dataset.  
 The method works as follows. First, the sequence graph is built, where nodes are sequences and edges connect sequences at distance <= *D*. Then, a greedy procedure identifies stars in the graph, as follows. Starting from the highest abundant sequence *S*, it creates a group consisting of *S* plus all its neighbours (sequences at distance <= *D*) whose abundance is at most *F* times the abundance of *S*. The "true" sequence B is the centre of the star (in this case, *S*). The procedure stops when >= 20% of the neighbours of the current sequence *S* are also neighbours of a previously considered sequence. 
-For more details on the method, please refer to our [preprint](https://doi.org/10.1101/2023.06.28.546923). 
+For more details on the method, please refer to our [paper](https://doi.org/10.1038/s41467-024-51424-4). 
 
 Below we assume that the sequences and their abundance have already been computed (using *e.g.* [seqkit](https://bioinf.shenwei.me/seqkit/)). See also a sample input file in ```example/in/```.
 
@@ -74,4 +74,4 @@ The above command runs in < 1 second on a desktop computer.
 
 If you find this software useful, please cite:
 
-Nadalin *et al.* Multi-omic lineage tracing predicts the transcriptional, epigenetic and genetic determinants of cancer evolution. *biorxiv*. https://doi.org/10.1101/2023.06.28.546923
+Nadalin *et al.* Multi-omic lineage tracing predicts the transcriptional, epigenetic and genetic determinants of cancer evolution. *Nature Communications*. https://doi.org/10.1038/s41467-024-51424-4
